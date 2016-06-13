@@ -40,9 +40,9 @@
   </script>
 
 </head>
-<body style="margin-top: 70px; margin-bottom: 70px">
-<div class="container">
-  <div class="row">
+<body style="margin-top: 70px; margin-bottom: 70px; background-color: #2E2F30">
+<div class="container" style="background-color: #2E2F30">
+  <div class="row" style="color: lightgray">
     <div class="col-xs-12">
       <div id="photo-header" class="text-center">
         <!-- PHOTO (AVATAR) -->
@@ -60,7 +60,8 @@
       <!-- ABOUT ME -->
       <div class="box">
         <h2>Objective</h2>
-        <p>Highly motivated individual looking to obtain a junior developer role under the guide of a mentor or senior
+        <p style="color: lightgray">Highly motivated individual looking to obtain a junior developer role under the
+          guide of a mentor or senior
           developer. I thoroughly enjoy web development and am constantly looking to enhance my knowledge base, learn
           new languages and grow as a developer.</p>
       </div>
@@ -69,30 +70,30 @@
         <h2>Education</h2>
         <ul id="education" class="clearfix">
           <li>
-            <div class="year pull-left">2017</div>
-            <div class="description pull-right">
+            <div class="year pull-left" style="border-radius: 10px">2017</div>
+            <div class="description pull-right" style="border-radius: 10px">
               <h3>Dakota State University</h3>
               <p>Big data analytics utilizing Python, Hadoop/Spark, SQL, R, SAS and statistical methods. GPA 4.0.</p>
             </div>
           </li>
           <li>
-            <div class="year pull-left">2016</div>
-            <div class="description pull-right">
+            <div class="year pull-left" style="border-radius: 10px">2016</div>
+            <div class="description pull-right" style="border-radius: 10px">
               <h3>DaVinci Coders</h3>
               <p>Building the toolbelt of a junior Ruby on Rails developer through proficient comprehension of Ruby,
                 Ruby on Rails, Agile, GIT, RSpec, TDD, Guard, MVC and associated Rails technology</p>
             </div>
           </li>
           <li>
-            <div class="year pull-left">2006</div>
-            <div class="description pull-right">
+            <div class="year pull-left" style="border-radius: 10px">2006</div>
+            <div class="description pull-right" style="border-radius: 10px">
               <h3>University of Missouri - Columbia</h3>
               <p>BSBA Finance</p>
             </div>
           </li>
           <li>
-            <div class="year pull-left">2001</div>
-            <div class="description pull-right">
+            <div class="year pull-left" style="border-radius: 10px">2001</div>
+            <div class="description pull-right" style="border-radius: 10px">
               <h3>Westminster Christian Academy</h3>
               <p>High School</p>
             </div>
@@ -100,7 +101,7 @@
         </ul>
       </div>
       <!-- EXPERIENCES -->
-      <div class="box">
+      <div class="box" style="color: lightgray">
         <h2>Experiences</h2>
         <div class="job clearfix">
           <div class="col-xs-3">
@@ -145,37 +146,33 @@
       <!-- CONTACT -->
       <div class="box clearfix">
         <h2>Contact</h2>
-        <div class="contact-item">
+        <div class="contact-item" style="color: lightgray">
           <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
           <div class="title only pull-right">314-712-2355</div>
         </div>
-        <div class="contact-item">
+        <div class="contact-item" style="color: lightgray">
           <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
           <div class="title only pull-right">rsbnq6@yahoo.com</div>
         </div>
-        <div class="contact-item">
+        <div class="contact-item" style="color: lightgray">
           <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
           <div class="title only pull-right"><%= link_to 'GitHub', 'https://github.com/RichardBlankenhorn', target: '_blank' %></div>
         </div>
-        <div class="contact-item">
+        <div class="contact-item" style="color: lightgray">
           <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
           <div class="title only pull-right"><%= link_to 'LinkedIN', 'https://www.linkedin.com/in/richard-blankenhorn-68210790', target: '_blank' %></div>
+        </div>
+        <div class="contact-item" style="color: lightgray">
+          <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+          <div class="title only pull-right"><%= link_to 'Send Message', contact_path %></div>
         </div>
       </div>
       <!-- RESUME -->
       <div class="box clearfix">
         <h2>Resume</h2>
-        <div class="contact-item">
+        <div class="contact-item" style="color: lightgray">
           <div class="icon pull-left text-center"><span class="fa fa-download fa-fw"></span></div>
           <div class="title only pull-right"><%= link_to 'Download Resume', pdf_path(format('docx')) %></div>
-        </div>
-      </div>
-      <!-- MESSAGE -->
-      <div class="box clearfix">
-        <h2>Send me a message!</h2>
-        <div class="contact-item">
-          <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-          <div class="title only pull-right"><%= link_to 'Send Message', contact_path %></div>
         </div>
       </div>
       <!-- SKILLS -->
@@ -188,6 +185,7 @@
           <div class="item-skills" data-percent="0.30">CSS</div>
           <div class="item-skills" data-percent="0.25">SQL</div>
           <div class="item-skills" data-percent="0.20">C#</div>
+          <div class="item-skills" data-percent="0.10">R</div>
           <div class="skills-legend clearfix">
             <div class="legend-left legend">Beginner</div>
             <div class="legend-left legend"><span>Proficient</span></div>
@@ -197,20 +195,20 @@
         </div>
       </div>
       <!-- LANGUAGES -->
-      <div class="box">
+      <div class="box" style="color: lightgray">
         <h2>Dev Tools</h2>
         <div id="language-skills">
-          <div class="skill">RubyMine, PyCharm, SQL Developer
+          <div class="skill">RubyMine, PyCharm, SQL Developer, Visual Studio Express, R Studio
             <div class="icons pull-right">
               <div style="width: 80%;" class="icons-red"></div>
             </div>
           </div>
-          <div class="skill">Git, GitHub
+          <div class="skill">Git, GitHub, Git Branching
             <div class="icons pull-right">
               <div style="width: 60%;" class="icons-red"></div>
             </div>
           </div>
-          <div class="skill">Pivotal Tracker
+          <div class="skill">Pivotal Tracker, Agile
             <div class="icons pull-right">
               <div style="width: 60%;" class="icons-red"></div>
             </div>
@@ -228,7 +226,7 @@
     </div>
   </div>
   <!-- PROJECTS -->
-  <div class="row">
+  <div class="row" style="color: lightgray">
     <div class="col-xs-12">
       <div class="box">
         <h2>Projects</h2>
@@ -237,7 +235,7 @@
           in data analytics</p>
         <div class="job clearfix">
           <div class="col-xs-3">
-            <div class="where">DaVinci Coders</div>
+            <div class="where">- DaVinci Coders</div>
           </div>
           <div class="col-xs-8">
             <div class="profession">Pair Up</div>
@@ -273,6 +271,39 @@
             <a class="fancybox" style="margin-right: 10px" rel="gallery1" href="/assets/NewTimeSlot.png" title="Create New TimeSlot Page">
               <img src="/assets/NewTimeSlot.png" width="30%" alt=""/>
             </a>
+          </div>
+        </div>
+        <div class="job clearfix">
+          <div class="col-xs-3">
+            <div class="where">- Dakota State University</div>
+          </div>
+          <div class="col-xs-8">
+            <div class="profession">IMDB Web Scrapping</div>
+            <div class="description">As part of my programming for data analytics course, we were required to create a
+              program that allows for the input of a year range along with the number of desired movies. The program
+              would then generate URLs for the IMDB website based upon the yearly range and number of movies. Movies were
+              then added to a JSON file in addition to an CSV file.
+
+              The program utilized the BeautifulSoup package in Python.
+            </div>
+          </div>
+        </div>
+        <div class="job clearfix">
+          <div class="col-xs-3">
+            <div class="where">- Dakota State University</div>
+          </div>
+          <div class="col-xs-8">
+            <div class="profession">Stock Tweet Analysis</div>
+            <div class="description">For this project, I created a program to read stock twits from a JSON file in to a
+              list of dictionaries. Once the dictionaries were obtained, the date/time, content and user-assigned sentiment
+              were extracted from each tweet. For each tweet, all punctuation was removed, the body was converted to
+              ASCII format and timestamps were converted to date/time strings. In addition, unknown sentiment values
+              were replaced with null values.
+              Sentiment analysis was conducted for tweets with no user-assigned sentiment by utilizing text files
+              containing positive and negative words. Once sentiment analysis was completed, all tweets were organized
+              in to positive, negative and neutral dictionaries along with the number of tweets in each dictionary.
+              Results were displayed through Matplotlib by drawing pie charts and line charts.
+            </div>
           </div>
         </div>
       </div>

@@ -31,7 +31,9 @@ CONTAINER
 .container{
   margin-top: 0px;
   margin-bottom: 0px;
-  background: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  background: #2E2F30; /*#fff*/
 }
 /*******************************************
 PHOTO (AVATAR)

@@ -2,6 +2,9 @@ class WelcomeController < ApplicationController
   def resume
   end
 
+  def interest
+  end
+
   def contact
   end
 

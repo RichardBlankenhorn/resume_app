@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   get 'contact' => 'welcome#contact'
 
+  get 'interest' => 'welcome#interest'
+
   get 'pdf' => 'welcome#download_pdf'
 end
