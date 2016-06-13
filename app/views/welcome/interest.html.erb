@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3ColorResume</title>
+  <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+  <!--<link href="/assets/font-awesome.css" rel="stylesheet">-->
+  <link href="../stylesheets/main.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../javascripts/html5shiv.js"></script>
+  <script src="../javascripts/respond.min.js"></script>
+  <![endif]-->
+  <script>
+    var callback = function() {
+      $('.item-skills').each(function() {
+        newWidth = $(this).parent().width() * $(this).data('percent');
+        $(this).width(0);
+        $(this).animate({
+          width: newWidth,
+        }, 1000);
+      });
+      $('.icons-red').each(function() {
+        height = $(this).height();
+        $(this).animate({
+          height: 14,
+        }, 2000);
+      });
+    };
+    $(document).ready(callback);
+
+    var resize;
+    window.onresize = function() {
+      clearTimeout(resize);
+      resize = setTimeout(function() {
+        callback();
+      }, 100);
+    };
+  </script>
+
+</head>
+<body style="margin-top: 30px; margin-bottom: 30px; background-color: #2E2F30; color: lightgray">
+<div class="row" style="color: lightgray">
+  <div class="col-xs-12">
+    <div class="text-center">
+      <div id="text-header">
+        <h1><span>About ME!</span><sup></sup></h1>
+        <p class="text-center">
+          <h3>I am originally from St Louis, MO, but moved to Denver in 2011. I absolutely love Colorado and everything it
+            has to offer.
+          </h3>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-4 text-center">
+    <div class="box">
+      <h2>Sports</h2>
+      <div class="job clearfix">
+        <div class="col-xs-12">
+          <div class="where">Football</div>
+          <div class="where">Hockey</div>
+          <div class="where">Baseball</div>
+          <div class="where">Golf</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-4 text-center">
+    <div class="box">
+      <h2>Activities</h2>
+      <div class="job clearfix">
+        <div class="col-xs-12">
+          <div class="where">Snowboarding</div>
+          <div class="where">Cycling</div>
+          <div class="where">Hiking</div>
+          <div class="where">Camping</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-4 text-center">
+    <div class="box">
+      <h2>Hobbies</h2>
+      <div class="job clearfix">
+        <div class="col-xs-12">
+          <div class="where">Programming</div>
+          <div class="where">Coffee</div>
+          <div class="where">Chelsea vs Tottenham</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
