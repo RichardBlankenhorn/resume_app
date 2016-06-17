@@ -24,7 +24,11 @@ body{
   font-size: 1em;
   color: #363636;
   background: #ededed;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background-color: #2E2F30;
 }
+
 /*******************************************
 CONTAINER
 *******************************************/
@@ -142,6 +146,7 @@ EDUCATION
   font-size: 1.5em;
   font-weight: 700;
   display: inline-block;
+  border-radius: 10px;
 }
 #education .description{
   width: 80%;
@@ -151,6 +156,7 @@ EDUCATION
   position: relative;
   padding: 10px 10px 0 10px;
   border-bottom: 1px solid #ddd;
+  border-radius: 10px;
 }
 #education .description:after {
   content: '';
@@ -181,6 +187,7 @@ EXPERIENCES
 *******************************************/
 .job{
   margin-bottom: 15px;
+  color: lightgray;
 }
 .job .where{
   font-size: 1.4em;
@@ -204,6 +211,7 @@ CONTACT
 .contact-item{
   width: 100%;
   float: left;
+  color: lightgray;
 }
 .contact-item .icon{
   padding: 10px;

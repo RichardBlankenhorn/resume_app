@@ -40,8 +40,8 @@
   </script>
 
 </head>
-<body style="margin-top: 70px; margin-bottom: 70px; background-color: #2E2F30">
-<div class="container" style="background-color: #2E2F30">
+<body>
+<div class="container">
   <div class="row" style="color: lightgray">
     <div class="col-xs-12">
       <div id="photo-header" class="text-center">
@@ -70,131 +70,38 @@
         <h2>Education</h2>
         <ul id="education" class="clearfix">
           <li>
-            <div class="year pull-left" style="border-radius: 10px">2017</div>
-            <div class="description pull-right" style="border-radius: 10px">
+            <div class="year pull-left">2017</div>
+            <div class="description pull-right">
               <h3>Dakota State University</h3>
-              <p>Big data analytics utilizing Python, Hadoop/Spark, SQL, R, SAS and statistical methods. GPA 4.0.</p>
+              <p>Masters in Data Analytics <br>
+                <br>Big data analytics utilizing Python, Hadoop/Spark, SQL, R, SAS and statistical methods. GPA 4.0.</p>
             </div>
           </li>
           <li>
-            <div class="year pull-left" style="border-radius: 10px">2016</div>
-            <div class="description pull-right" style="border-radius: 10px">
+            <div class="year pull-left">2016</div>
+            <div class="description pull-right">
               <h3>DaVinci Coders</h3>
               <p>Building the toolbelt of a junior Ruby on Rails developer through proficient comprehension of Ruby,
                 Ruby on Rails, Agile, GIT, RSpec, TDD, Guard, MVC and associated Rails technology</p>
             </div>
           </li>
           <li>
-            <div class="year pull-left" style="border-radius: 10px">2006</div>
-            <div class="description pull-right" style="border-radius: 10px">
+            <div class="year pull-left">2006</div>
+            <div class="description pull-right">
               <h3>University of Missouri - Columbia</h3>
               <p>BSBA Finance</p>
             </div>
           </li>
           <li>
-            <div class="year pull-left" style="border-radius: 10px">2001</div>
-            <div class="description pull-right" style="border-radius: 10px">
+            <div class="year pull-left">2001</div>
+            <div class="description pull-right">
               <h3>Westminster Christian Academy</h3>
               <p>High School</p>
             </div>
           </li>
         </ul>
       </div>
-      <!-- EXPERIENCES -->
-      <div class="box" style="color: lightgray">
-        <h2>Experiences</h2>
-        <div class="job clearfix">
-          <div class="col-xs-3">
-            <div class="where">DaVinci Coders</div>
-            <div class="year">Feb 2015 - May 2015</div>
-          </div>
-          <div class="col-xs-9">
-            <div class="profession">Ruby on Rails</div>
-            <div class="description">Completed 13 week intensive course covering Ruby on Rails and various Rails
-              technology.
-              The course focused on git, github and the development process with regard to Rails app development. Pair
-              programmed on a project to develop an app called Pair Up. Through the Pair Up app, which is designed for
-              students, students may open an account, set their time availability and are paired up with other students
-              who have similar time availability. The students can then send each other messages (stored in a database)
-              and schedule a time to Pair Up!
-            </div>
-          </div>
-        </div>
-        <div class="job clearfix">
-          <div class="col-xs-3">
-            <div class="where">Scottrade Inc</div>
-            <div class="year">2011 - Present</div>
-          </div>
-          <div class="col-xs-9">
-            <div class="profession">Financial Services Representative II</div>
-            <div class="description">Analyze and implement option expiration reports to mitigate risk to the firm.
-              Involves thorough understanding of margin call risk, buying power calculations and risk impact to the
-              client as well as the firm. Research and analyze impact to clients tax situation due to mandatory
-              reorganizations
-              including mergers, splits and spinoffs. Assist clients with cost basis calculations and overall impact to
-              their
-              form 1099. Develop and implement effective learning methods to prepare new broker trainees with their
-              series 7
-              and 63 exams. Act as point of reference and provide on the job training to provide new hires with a better
-              understanding of their roles.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-5">
-      <!-- CONTACT -->
-      <div class="box clearfix">
-        <h2>Contact</h2>
-        <div class="contact-item" style="color: lightgray">
-          <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
-          <div class="title only pull-right">314-712-2355</div>
-        </div>
-        <div class="contact-item" style="color: lightgray">
-          <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-          <div class="title only pull-right">rsbnq6@yahoo.com</div>
-        </div>
-        <div class="contact-item" style="color: lightgray">
-          <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
-          <div class="title only pull-right"><%= link_to 'GitHub', 'https://github.com/RichardBlankenhorn', target: '_blank' %></div>
-        </div>
-        <div class="contact-item" style="color: lightgray">
-          <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
-          <div class="title only pull-right"><%= link_to 'LinkedIN', 'https://www.linkedin.com/in/richard-blankenhorn-68210790', target: '_blank' %></div>
-        </div>
-        <div class="contact-item" style="color: lightgray">
-          <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-          <div class="title only pull-right"><%= link_to 'Send Message', contact_path %></div>
-        </div>
-      </div>
-      <!-- RESUME -->
-      <div class="box clearfix">
-        <h2>Resume</h2>
-        <div class="contact-item" style="color: lightgray">
-          <div class="icon pull-left text-center"><span class="fa fa-download fa-fw"></span></div>
-          <div class="title only pull-right"><%= link_to 'Download Resume', pdf_path(format('docx')) %></div>
-        </div>
-      </div>
-      <!-- SKILLS -->
-      <div class="box">
-        <h2>Skills</h2>
-        <div class="skills">
-          <div class="item-skills" data-percent="0.50">Ruby on Rails</div>
-          <div class="item-skills" data-percent="0.40">Python</div>
-          <div class="item-skills" data-percent="0.30">HTML</div>
-          <div class="item-skills" data-percent="0.30">CSS</div>
-          <div class="item-skills" data-percent="0.25">SQL</div>
-          <div class="item-skills" data-percent="0.20">C#</div>
-          <div class="item-skills" data-percent="0.10">R</div>
-          <div class="skills-legend clearfix">
-            <div class="legend-left legend">Beginner</div>
-            <div class="legend-left legend"><span>Proficient</span></div>
-            <div class="legend-right legend"><span>Expert</span></div>
-            <div class="legend-right legend">Master</div>
-          </div>
-        </div>
-      </div>
-      <!-- LANGUAGES -->
+      <!-- DEV TOOLS -->
       <div class="box" style="color: lightgray">
         <h2>Dev Tools</h2>
         <div id="language-skills">
@@ -205,16 +112,128 @@
           </div>
           <div class="skill">Git, GitHub, Git Branching
             <div class="icons pull-right">
-              <div style="width: 60%;" class="icons-red"></div>
+              <div class="icons-red"></div>
             </div>
           </div>
           <div class="skill">Pivotal Tracker, Agile
             <div class="icons pull-right">
-              <div style="width: 60%;" class="icons-red"></div>
+              <div class="icons-red"></div>
+            </div>
+          </div>
+          <div class="skill">TDD, RSpec
+            <div class="icons pull-right">
+              <div class="icons-red"></div>
             </div>
           </div>
         </div>
       </div>
+      <!-- EXPERIENCES -->
+      <div class="box" style="margin-top: 27px">
+        <h2>Experiences</h2>
+        <div class="job clearfix">
+          <div class="col-xs-3">
+            <div class="where">DaVinci Coders - Instructor Jason Noble</div>
+          </div>
+          <div class="col-xs-9">
+            <div class="profession">Ruby on Rails</div>
+            <div class="description">Completed a 13 week intensive course covering Ruby on Rails and various Rails
+              technology.<br>
+              <br>
+              The course focused on git, github, git branching and the development process with regard to Rails app
+              development. In addition, the beginning of the course emphasized command line proficiency and the
+              relationship with app development.<br>
+              <br>
+              The second portion of the course focused on Ruby syntax, methods, arrays, classes and proper Ruby
+              formatting. Throughout the course, we utilized Pivotal Tracker to keep track of homework assignments and
+              frequently opened pull requests so that mentors and students could review our work. We also built a number
+              of in-class projects including a TDD designed shopping cart to allow shoppers to add products to their
+              cart, checkout and receive an email about the order.<br>
+              <br>
+              Towards the end of the course, we pair programmed on group projects and created Pivotal Tracker stories
+              to help organize our work. It was during our group project that I began to appreciate the git branching
+              strategies that we had previously covered. This experience also provided valuable insight with regard to
+              the importance of communication and collaboration when developing apps. The app in question is Pair Up and
+              is detailed below in the Projects section.
+            </div>
+          </div>
+        </div>
+        <div class="job clearfix">
+          <div class="col-xs-3">
+            <div class="where">Scottrade Inc</div>
+          </div>
+          <div class="col-xs-9">
+            <div class="profession">Financial Services Representative I & II</div>
+            <div class="description">
+              My time at Scottrade has taught me the importance of effective communication, leadership and teamwork. As with most jobs,
+              each day presents new issues and challenges. There are times when you will not know the answer to a question asked or how to solve a clients given
+              problem. However, employees are encouraged to ask questions, obtain assistance and seek guidance at all times.
+              In addition, my fellow employees are always there and willing to help in any way possible. Over the years I have
+              witnessed how effective and important this culture is and how it leads to an excellent customer experience. I look
+              forward to taking this mentality and practice in to a junior development role with the goal of making a lasting
+              impact. <br>
+              <br>
+              In addition, my time at Scottrade has provide me the opportunity to act as a mentor and help my peers develop in their roles.
+              I have been privileged to develop new learning techniques, provide one on one role play training, act as a point
+              of reference, pass on what I have learned and lead by example. After gaining experience in the development field,
+              my goal is to once again act as a mentor to junior developers and help them develop in their roles.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-5">
+      <!-- CONTACT -->
+      <div class="box clearfix">
+        <h2>Contact</h2>
+        <div class="contact-item">
+          <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+          <div class="title only pull-right">314-712-2355</div>
+        </div>
+        <div class="contact-item">
+          <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+          <div class="title only pull-right">rsbnq6@yahoo.com</div>
+        </div>
+        <div class="contact-item">
+          <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
+          <div class="title only pull-right"><%= link_to 'GitHub', 'https://github.com/RichardBlankenhorn', target: '_blank' %></div>
+        </div>
+        <div class="contact-item">
+          <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
+          <div class="title only pull-right"><%= link_to 'LinkedIN', 'https://www.linkedin.com/in/richard-blankenhorn-68210790', target: '_blank' %></div>
+        </div>
+        <!--<div class="contact-item" style="color: lightgray">
+          <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+          <div class="title only pull-right"><%#= link_to 'Send Message', contact_path %></div>
+        </div>-->
+      </div>
+      <!-- RESUME -->
+      <div class="box clearfix">
+        <h2>Resume</h2>
+        <div class="contact-item">
+          <div class="icon pull-left text-center"><span class="fa fa-download fa-fw"></span></div>
+          <div class="title only pull-right"><%= link_to 'Download Resume', pdf_path(format('pdf')) %></div>
+        </div>
+      </div>
+      <!-- SKILLS -->
+      <div class="box">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="item-skills" data-percent="0.40">Ruby on Rails</div>
+          <div class="item-skills" data-percent="0.30">Python</div>
+          <div class="item-skills" data-percent="0.25">HTML</div>
+          <div class="item-skills" data-percent="0.25">CSS</div>
+          <div class="item-skills" data-percent="0.25">SQL</div>
+          <div class="item-skills" data-percent="0.15">C#</div>
+          <div class="item-skills" data-percent="0.15">R</div>
+          <div class="skills-legend clearfix">
+            <div class="legend-left legend">Beginner</div>
+            <div class="legend-left legend"><span>Proficient</span></div>
+            <div class="legend-right legend"><span>Expert</span></div>
+            <div class="legend-right legend">Master</div>
+          </div>
+        </div>
+      </div>
+      <!-- LANGUAGES -->
       <!-- HOBBIES -->
       <div class="box">
         <h2>Hobbies</h2>
@@ -222,6 +241,54 @@
         <div class="hobby">Snowboarding</div>
         <div class="hobby">Cycling</div>
         <div class="hobby">Futbol</div>
+        <div class="hobby">Camping</div>
+        <div class="hobby">Hiking - 14ers</div>
+      </div>
+      <!-- WORK EXPERIENCE -->
+      <div class="box">
+        <h2>Work Experience</h2>
+        <div class="job clearfix">
+          <div class="col-xs-3">
+            <div class="where">Scottrade, Inc</div>
+            <div class="year">2011 - Present</div>
+          </div>
+          <div class="col-xs-9">
+            <div class="profession">Financial Services Rep II</div>
+            <div class="description">Worked as an FSR II with Scottrade, Inc.
+              <ul>
+                <li>Analyze and implement option expiration reports to mitigate risk to the firm.
+                  Involves thorough understanding of margin call risk, buying power calculations and risk impact to the
+                  client as well as the firm.</li>
+                <li>Research and analyze impact to clients tax situation due to mandatory
+                  reorganizations including mergers, splits and spinoffs. Assist clients with cost basis calculations and
+                  overall impact to their form 1099.</li>
+                <li>Develop and implement effective learning methods to prepare new broker trainees with their
+                  series 7 and 63 exams. Act as point of reference and provide on the job training to provide new hires
+                  with a better understanding of their roles.</li>
+                <li>Provide support to customers through email, chat and phones.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="job clearfix">
+          <div class="col-xs-3">
+            <div class="where">Scottrade Inc</div>
+            <div class="year">2009 - 2011</div>
+          </div>
+          <div class="col-xs-9">
+            <div class="profession">Financial Services Rep I</div>
+            <div class="description">
+              <ul>
+                <li>Assist clients with meeting their financial goals by providing a better understanding of financial
+                products and investment risks.</li>
+                <li>Provie clients witha  better understanding of our online tools and resources.</li>
+                <li>Assist clients via phone, chat and e-mail with opening accounts, placing trades, deposits and
+                account navigation. Answer general questions related to investment product availability, account services
+                tax preparation and firm policy.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -230,22 +297,19 @@
     <div class="col-xs-12">
       <div class="box">
         <h2>Projects</h2>
-        <p>This is a list of all of the projects I have worked in through my DaVinci Coders course and as part of my
-          masters program
-          in data analytics</p>
+        <p>This is a list of some of the projects I have worked on as part of my DaVinci Coders course and as part of my
+          masters program in data analytics</p>
         <div class="job clearfix">
           <div class="col-xs-3">
             <div class="where">- DaVinci Coders</div>
+            <div class="year">Ruby on Rails</div>
           </div>
           <div class="col-xs-8">
             <div class="profession">Pair Up</div>
-            <div class="description">Completed 13 week intensive course covering Ruby on Rails and various Rails
-              technology.
-              The course focused on git, github and the development process with regard to Rails app development. Pair
-              programmed on a project to develop an app called Pair Up. Through the Pair Up app, which is designed for
-              students, students may open an account, set their time availability and are paired up with other students
-              who have similar time availability. The students can then send each other messages (stored in a database)
-              and schedule a time to Pair Up!
+            <div class="description">Pair Up was designed to cater to students needing to connect with other students
+              in order to study or work together. Through the Pair Up app, students may open an account, set their time availability
+              and then view a list of students who have similar time availability.The students can then send each
+              other messages (stored in a database) and schedule a time to pair p!
             </div>
           </div>
         </div>
@@ -276,14 +340,17 @@
         <div class="job clearfix">
           <div class="col-xs-3">
             <div class="where">- Dakota State University</div>
+            <div class="year">Python (BeautifulSoup)</div>
+            <div class="year">
+              <%= link_to 'Python IMDB Project', 'https://github.com/RichardBlankenhorn/Assign_2', target: '_blank' %>
+            </div>
           </div>
           <div class="col-xs-8">
             <div class="profession">IMDB Web Scrapping</div>
             <div class="description">As part of my programming for data analytics course, we were required to create a
               program that allows for the input of a year range along with the number of desired movies. The program
-              would then generate URLs for the IMDB website based upon the yearly range and number of movies. Movies were
-              then added to a JSON file in addition to an CSV file.
-
+              would then generate URLs for the IMDB website based upon the yearly range and number of movies. The details
+              for all of the movies were then added to a JSON file in addition to an CSV file.
               The program utilized the BeautifulSoup package in Python.
             </div>
           </div>
@@ -291,6 +358,10 @@
         <div class="job clearfix">
           <div class="col-xs-3">
             <div class="where">- Dakota State University</div>
+            <div class="year">Python</div>
+            <div class="year">
+              <%= link_to 'Python Stock Twit Project', 'https://github.com/RichardBlankenhorn/Project_1', target: '_blank' %>
+            </div>
           </div>
           <div class="col-xs-8">
             <div class="profession">Stock Tweet Analysis</div>
