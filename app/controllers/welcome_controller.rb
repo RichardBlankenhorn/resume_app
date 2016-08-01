@@ -10,7 +10,7 @@ class WelcomeController < ApplicationController
 
   def download_pdf
     send_file(
-      "#{Rails.root}/public/RichBResume.pdf",
+      "#{Rails.root}/public/RichardBlankenhornResume.pdf",
       filename: "Resume.pdf",
       type: "application/pdf"
     )
